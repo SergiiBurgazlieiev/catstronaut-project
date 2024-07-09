@@ -1,7 +1,7 @@
 import { RESTDataSource } from '@apollo/datasource-rest';
 
 export class TrackAPI extends RESTDataSource {
-	bestURL = 'https://odyssey-lift-off-rest-api.herokuapp.com/';
+	baseURL = 'https://odyssey-lift-off-rest-api.herokuapp.com/';
 
 	getTracksForHome() {
 		return this.get('tracks');
