@@ -32,7 +32,7 @@ const Tracks = () => {
 		<Layout grid>
 			<QueryResult error={error} data={data} loading={loading}>
 				{data?.tracksForHome?.map((track) => (
-					<TrackCard track={track} key={`${Math.random()}${track.id}`} />
+					<TrackCard track={track} key={track.id} />
 				))}
 			</QueryResult>
 		</Layout>
